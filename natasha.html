@@ -2,26 +2,24 @@
 <html>
 
 <head>
+    <script type="text/javascript">   
+		function func(){
+            document.getElementById("name").innerHTML = "Enter Name:" + document.getElementById("myinput").value;
+        }
+    </script>
     <style>
         button {
           display: inline-block;
-          background-color: #67b331;
+          background-color: #67b301;
           width: 100px;
-          color: #ffffff;
-          text-align: center;
         }
     </style>
-    <script type="text/javascript">   
-		function func(){
-            document.getElementById("labels").innerHTML = "Name:" + document.getElementById("inputs").value;
-        }
-    </script>
     
 </head>
 <body>
-        <label id="labels">Name: </label>
+        <label id="name">Enter Name: </label>
         <br>
-        <input type="text", id="inputs">
+        <input type="text", id="myinput">
         <button type="button" onclick="func();">Submit</button>
 </body>
 </html>
